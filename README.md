@@ -1,4 +1,5 @@
 # Awesome-High-Performance-Computing-Cloud
+
 ## Top High-Performance Computing (HPC) Cloud Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
@@ -22,55 +23,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-* **[Rescale](https://rescale.com/)**
-  Full-stack HPC SaaS platform for engineering, scientific computing, simulation, AI/ML, and distributed workloads. Rescale provides cloud HPC orchestration, application environments, workflow automation, and access to multiple cloud infrastructures.
-
-* **[Azure CycleCloud](https://azure.microsoft.com/products/cyclecloud/)**
-  Enterprise HPC orchestration and management platform for Microsoft Azure, supporting schedulers such as Slurm, PBS Pro, LSF, Grid Engine, and HTCondor with automated cluster scaling.
-
-* **[AWS ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/)**
-  Open-source cluster management tool from AWS for deploying and dynamically scaling HPC environments on AWS using schedulers such as Slurm and AWS Batch. Although the software is open source, it is included here because its primary role is provisioning HPC infrastructure as an AWS cloud service.
-
-* **[Google Cloud HPC Toolkit](https://cloud.google.com/hpc-toolkit)**
-  Google Cloud's open-source toolkit for creating repeatable, turnkey HPC clusters using infrastructure-as-code and established HPC best practices.
-
-* **[Nimbix](https://www.nimbix.net/)**
-  HPC cloud platform focused on accelerated computing, engineering simulation, AI, scientific workloads, and specialized compute infrastructure.
-
-* **[Altair One](https://altair.com/altair-one)**
-  Cloud-based engineering and HPC environment providing access to simulation, AI, data analytics, and distributed computing resources.
-
-* **[Penguin Solutions](https://www.penguinsolutions.com/)**
-  HPC and AI infrastructure provider offering cloud, hosted, bare-metal, and managed HPC environments for technical computing workloads.
-
-* **[UberCloud](https://www.ubercloud.com/)**
-  HPC cloud marketplace and ecosystem connecting technical-computing users with cloud HPC infrastructure, applications, and service providers.
-
-* **[Sabrewing HPC](https://www.sabrewing.com/)**
-  HPC-focused infrastructure and cloud-computing services for technical and scientific workloads.
-
-* **[HPCNow!](https://www.hpcnow.com/)**
-  HPC infrastructure and cloud services provider focused on deploying and operating high-performance computing environments.
+| Platform | Description | Starting Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Rescale](https://rescale.com/)** | Full-stack HPC SaaS platform for engineering, simulation, AI/ML, and workflow automation across multiple clouds. | Starts at ~$0.04/core-hour for basic compute + Foundation platform tier | 5-day free trial with up to 500 core-hours / promotional compute credits upon evaluation request |
+| **[Azure CycleCloud](https://azure.microsoft.com/products/cyclecloud/)** | Enterprise HPC cluster orchestration and scheduler management (Slurm, PBS Pro, LSF) on Microsoft Azure. | $0 for CycleCloud software; underlying Azure compute starts at $0.0104/hr (B1s VM) or $0.096/hr (D2s v5) | Azure Free Account: $200 credit for 30 days + 12 months free access to 750 hrs/month of B1s VMs + 55+ always-free services |
+| **[AWS ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/)** | AWS cluster deployment and management tool for dynamically scaling Slurm and batch HPC workloads. | $0 for ParallelCluster software; underlying AWS compute starts at $0.0104/hr (t3.micro) or $0.0416/hr (t3.medium) | AWS Free Tier: 750 hrs/month of t2.micro or t3.micro instances for 12 months + 5 GB S3 standard storage |
+| **[Google Cloud HPC Toolkit](https://cloud.google.com/hpc-toolkit)** | Modular framework for deploying turnkey, repeatable HPC environments and Slurm clusters via Infrastructure-as-Code on GCP. | $0 for HPC Toolkit; underlying GCP compute starts at $0.0084/hr (e2-micro) or $0.0336/hr (e2-standard-2) | GCP Free Tier: $300 credit for 90 days + Always Free tier (1 non-preemptible `e2-micro` VM with 1 GB RAM & 30 GB standard disk/month) |
+| **[Nimbix (JARVICE Cloud)](https://www.nimbix.net/)** | Accelerated HPC and AI cloud platform providing containerized simulation, processing, and visualization workflows. | Starts at $0.15/core-hour for CPU nodes; $0.49/GPU-hour for entry GPU instances | No perpetual free tier; 14-day evaluation pilot with 50–100 free core-hours upon request |
+| **[Altair One](https://altair.com/altair-one)** | Cloud portal for CAE simulation, data analytics, and scalable HPC solver workloads powered by Altair Units. | Starts at ~$1,500/year for base Altair Units (AU) license pack (~$0.10–$0.50/AU-hour for cloud solver bursts) | 14-day free trial with full portal access to Altair simulation and modeling applications |
+| **[Penguin Solutions (POD)](https://www.penguinsolutions.com/)** | HPC and AI bare-metal infrastructure provider offering on-demand clusters and managed computing environments. | Starts at ~$0.10/core-hour for bare-metal CPU compute nodes (~$1.50/GPU-hour for accelerated instances) | No perpetual free tier; 30-day proof-of-concept trial with 500–1,000 core-hours upon sales qualification |
+| **[Simr (UberCloud)](https://www.ubercloud.com/)** | HPC cloud platform for running engineering simulations in containerized cloud environments across AWS, Azure, and GCP. | Starts at ~$125/user/month base platform subscription (or BYOC with cloud compute starting at ~$0.05/core-hr) | 30-day free trial for engineering teams with evaluation support and pre-configured simulation containers |
+| **[Sabalcore / Sabrewing HPC](https://www.sabrewing.com/)** | Bare-metal scientific and engineering HPC cloud service with pre-installed technical computing applications. | $0.14/core-hour on-demand ($0.10/core-hour prepaid volume pricing) | Free trial with 1,000 free core-hours + 100 GB storage for 30 days upon sign-up |
+| **[HPCNow!](https://www.hpcnow.com/)** | Specialized managed HPC cloud operations, cluster architecture, support, and optimization services. | Starts at ~$100/cluster-hour or ~$1,200/month for managed cluster operations + underlying cloud VM costs | No perpetual free tier; 14-day initial infrastructure assessment and proof-of-concept consultation trial |
 
 ### Other Strong Commercial / Hosted Options
 
-* **[AWS HPC / AWS Parallel Computing Service](https://aws.amazon.com/hpc/)**
-  AWS services for elastic HPC infrastructure, workload orchestration, networking, storage, and managed cluster environments.
-
-* **[Google Cloud HPC](https://cloud.google.com/hpc)**
-  Cloud HPC infrastructure built around high-performance compute, storage, networking, GPUs, and cluster orchestration.
-
-* **[Azure HPC](https://azure.microsoft.com/solutions/high-performance-computing/)**
-  Azure's collection of HPC compute, storage, networking, scheduler, and cluster-management services.
-
-* **[Oracle Cloud HPC](https://www.oracle.com/cloud/hpc/)**
-  HPC infrastructure and bare-metal compute designed for engineering, scientific, simulation, and compute-intensive workloads.
-
-* **[CoreWeave](https://www.coreweave.com/)**
-  GPU-focused cloud infrastructure increasingly used for large-scale AI/HPC workloads.
-
-* **[Lambda](https://lambdal.com/)**
-  GPU cloud and infrastructure provider supporting AI, machine learning, and high-performance accelerated workloads.
+| Platform | Description | Starting Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/hpc/)** | Fully managed service for building and operating Slurm-based HPC clusters on AWS. | $0.007/hr (Small controller) + $0.0821/hr node management fee + underlying EC2 (starts at $0.0104/hr) | AWS Free Tier: 750 hrs/month of t3.micro for 12 months; AWS POC grants available up to $300+ |
+| **[Google Cloud HPC](https://cloud.google.com/hpc)** | High-performance compute, networking, TPU/GPU infrastructure, and GCP Batch scheduler for scientific computing. | $0 for GCP Batch scheduler; compute instances start at $0.0084/hr (`e2-micro`) or $0.0336/hr (`e2-standard-2`) | $300 credit for 90 days + Always Free tier (1 `e2-micro` VM with 1 GB RAM & 30 GB standard persistent storage/month) |
+| **[Azure HPC](https://azure.microsoft.com/solutions/high-performance-computing/)** | Cloud HPC infrastructure including HBv3/HBv4/HX instances, InfiniBand networking, and Azure Batch job scheduling. | $0 for Azure Batch scheduler; compute instances start at $0.0104/hr (B1s) or $0.096/hr (D2s v5) | $200 credit for 30 days + 12 months free access to 750 hrs/month of B1s VMs + 55+ always-free services |
+| **[Oracle Cloud HPC](https://www.oracle.com/cloud/hpc/)** | High-performance bare-metal computing with ultra-low latency cluster networking for engineering simulations and AI. | Starts at $0.01/OCPU-hour (Ampere A1), $0.04/core-hour (standard x86), or $10.00/GPU-hour (NVIDIA H100) | Always Free tier: 4 OCPUs & 24 GB RAM (Ampere A1) + 2 AMD VMs (1/8 OCPU, 1 GB RAM each) + 200 GB block storage; plus $300 credit for 30 days |
+| **[CoreWeave](https://www.coreweave.com/)** | Specialized GPU cloud provider for AI training, machine learning, and accelerated HPC simulations. | Starts at $0.06/vCPU-hour or $1.25/GPU-hour (NVIDIA L40), $2.70/GPU-hour (A100 80GB), $6.16/GPU-hour (H100 SXM5) | No perpetual free tier; Accelerator Program provides up to $10,000–$25,000 in GPU cloud credits for approved startups and researchers |
+| **[Lambda (Lambda GPU Cloud)](https://lambdal.com/)** | Cloud GPU infrastructure with 1-click clusters for deep learning, AI modeling, and accelerated computing. | Starts at $0.50/GPU-hour (entry GPUs), $1.29/GPU-hour (A100 40GB/80GB), $2.49/GPU-hour (H100 PCIe) | No perpetual free tier; Lambda Research Grant provides up to $5,000 in compute credits for academic AI/HPC research |
 
 ## Open-Source GitHub Projects
 
