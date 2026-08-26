@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B19" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="accent-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Filter Effects -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56, 189, 248, 0.07)" stroke-width="1" />
+    </pattern>
+
+    <style>
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes float-slow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes float-reverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -100; }
+      }
+      .node-pulse {
+        animation: pulse-glow 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating {
+        animation: float-slow 5s ease-in-out infinite;
+      }
+      .floating-alt {
+        animation: float-reverse 6s ease-in-out infinite;
+      }
+      .data-stream {
+        stroke-dasharray: 6, 6;
+        animation: dash 2.5s linear infinite;
+      }
+      .data-stream-fast {
+        stroke-dasharray: 8, 8;
+        animation: dash 1.5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" rx="16" />
+  
+  <!-- Tech Grid Background -->
+  <rect width="1200" height="360" fill="url(#grid)" rx="16" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="100" r="160" fill="#06B6D4" opacity="0.12" filter="url(#glow)" class="node-pulse" />
+  <circle cx="1000" cy="220" r="180" fill="#8B5CF6" opacity="0.15" filter="url(#glow)" class="node-pulse" style="animation-delay: -2s;" />
+  <circle cx="600" cy="300" r="140" fill="#3B82F6" opacity="0.1" filter="url(#glow)" />
+
+  <!-- Network Circuit Lines & Compute Topology -->
+  <g stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5" fill="none">
+    <path d="M 80 80 L 320 80 L 400 140 L 800 140 L 880 80 L 1120 80" />
+    <path d="M 80 280 L 280 280 L 380 220 L 820 220 L 920 280 L 1120 280" />
+    <path d="M 200 40 L 200 320" stroke="rgba(139, 92, 246, 0.2)" />
+    <path d="M 1000 40 L 1000 320" stroke="rgba(139, 92, 246, 0.2)" />
+  </g>
+
+  <!-- Dynamic Active Data Streams -->
+  <g fill="none">
+    <path d="M 120 80 L 320 80 L 400 140 L 800 140 L 880 80 L 1080 80" stroke="#38BDF8" stroke-width="2" class="data-stream" opacity="0.8" />
+    <path d="M 1080 280 L 920 280 L 820 220 L 380 220 L 280 280 L 120 280" stroke="#C084FC" stroke-width="2" class="data-stream-fast" opacity="0.75" />
+    <path d="M 200 60 L 200 300" stroke="#06B6D4" stroke-width="1.5" class="data-stream" opacity="0.6" />
+    <path d="M 1000 300 L 1000 60" stroke="#A855F7" stroke-width="1.5" class="data-stream-fast" opacity="0.6" />
+  </g>
+
+  <!-- Cluster Node Clusters (Left Visual Element) -->
+  <g class="floating" transform="translate(60, 110)">
+    <rect x="0" y="0" width="110" height="130" rx="10" fill="url(#card-grad)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
+    <circle cx="25" cy="25" r="5" fill="#38BDF8" filter="url(#soft-glow)" />
+    <circle cx="55" cy="25" r="5" fill="#38BDF8" opacity="0.4" />
+    <circle cx="85" cy="25" r="5" fill="#38BDF8" opacity="0.4" />
+    <line x1="20" y1="45" x2="90" y2="45" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2" />
+    <line x1="20" y1="60" x2="70" y2="60" stroke="rgba(129, 140, 248, 0.3)" stroke-width="2" />
+    <line x1="20" y1="75" x2="80" y2="75" stroke="rgba(192, 132, 252, 0.3)" stroke-width="2" />
+    <rect x="20" y="92" width="70" height="20" rx="4" fill="rgba(6, 182, 212, 0.15)" stroke="#06B6D4" stroke-width="1" />
+    <text x="55" y="106" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">MPI / SLURM</text>
+  </g>
+
+  <!-- GPU / Accelerator Cluster (Right Visual Element) -->
+  <g class="floating-alt" transform="translate(1030, 110)">
+    <rect x="0" y="0" width="110" height="130" rx="10" fill="url(#card-grad)" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.5" />
+    <circle cx="25" cy="25" r="5" fill="#C084FC" filter="url(#soft-glow)" />
+    <circle cx="55" cy="25" r="5" fill="#C084FC" opacity="0.4" />
+    <circle cx="85" cy="25" r="5" fill="#C084FC" opacity="0.4" />
+    <rect x="35" y="48" width="40" height="32" rx="4" fill="none" stroke="#A855F7" stroke-width="1.5" />
+    <line x1="45" y1="40" x2="45" y2="48" stroke="#A855F7" stroke-width="1.5" />
+    <line x1="65" y1="40" x2="65" y2="48" stroke="#A855F7" stroke-width="1.5" />
+    <line x1="45" y1="80" x2="45" y2="88" stroke="#A855F7" stroke-width="1.5" />
+    <line x1="65" y1="80" x2="65" y2="88" stroke="#A855F7" stroke-width="1.5" />
+    <rect x="20" y="92" width="70" height="20" rx="4" fill="rgba(168, 85, 247, 0.15)" stroke="#A855F7" stroke-width="1" />
+    <text x="55" y="106" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">GPU CLOUD</text>
+  </g>
+
+  <!-- Central Hero Header Content -->
+  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    
+    <!-- Top Pill Badge -->
+    <g transform="translate(600, 52)">
+      <rect x="-140" y="-14" width="280" height="28" rx="14" fill="rgba(30, 41, 59, 0.85)" stroke="url(#accent-cyan)" stroke-width="1.2" />
+      <circle cx="-115" cy="0" r="4" fill="#38BDF8" filter="url(#soft-glow)" />
+      <text x="5" y="4" fill="#E2E8F0" font-size="11" font-weight="600" letter-spacing="1.5">⚡ CURATED AWESOME ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="130" font-size="44" font-weight="900" letter-spacing="-0.5" fill="url(#accent-cyan)" filter="url(#soft-glow)">
+      Awesome HPC Cloud
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="172" font-size="17" font-weight="500" fill="#94A3B8" letter-spacing="0.2">
+      High-Performance Computing, Elastic Clusters, Schedulers &amp; Scientific AI
+    </text>
+
+    <!-- Feature Tag Badges Row -->
+    <g transform="translate(600, 222)">
+      <g transform="translate(-290, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1" />
+        <text x="0" y="4.5" fill="#38BDF8" font-size="11.5" font-weight="600">☁️ Cloud SaaS</text>
+      </g>
+      <g transform="translate(-140, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(99, 102, 241, 0.5)" stroke-width="1" />
+        <text x="0" y="4.5" fill="#818CF8" font-size="11.5" font-weight="600">🚀 Slurm &amp; MPI</text>
+      </g>
+      <g transform="translate(0, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1" />
+        <text x="0" y="4.5" fill="#C084FC" font-size="11.5" font-weight="600">🔥 GPU Clusters</text>
+      </g>
+      <g transform="translate(140, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(236, 72, 153, 0.5)" stroke-width="1" />
+        <text x="0" y="4.5" fill="#F472B6" font-size="11.5" font-weight="600">☸️ K8s Batch</text>
+      </g>
+      <g transform="translate(285, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(34, 197, 94, 0.5)" stroke-width="1" />
+        <text x="0" y="4.5" fill="#4ADE80" font-size="11.5" font-weight="600">💾 Parallel I/O</text>
+      </g>
+    </g>
+
+    <!-- Bottom Stat Line -->
+    <g transform="translate(600, 280)">
+      <rect x="-380" y="-18" width="760" height="36" rx="8" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(148, 163, 184, 0.15)" stroke-width="1" />
+      <text x="0" y="5" fill="#CBD5E1" font-size="12.5" font-weight="500">
+        🔬 <tspan fill="#38BDF8" font-weight="700">60+ Curated Repositories &amp; Platforms</tspan> • Transparent Pricing • Live Star Ranks • Open Source First
+      </text>
+    </g>
+
+  </g>
+</svg>
