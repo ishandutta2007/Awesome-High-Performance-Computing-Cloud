@@ -1,327 +1,192 @@
 # Awesome-High-Performance-Computing-Cloud
+# Top High-Performance Computing (HPC) Cloud Ecosystem
 
-# Top Hospital Bed Management Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Hospital Bed Management, Patient Flow, Capacity Management & Hospital Operations*  
+**Curated List of SaaS Products & Open-Source GitHub Projects**
+*Focused on Cloud HPC, Elastic Cluster Provisioning, Scientific Computing & High-Performance Workloads*
 **Last updated: August 2026**
 
-This repository tracks notable **SaaS/Hosted platforms** and **open-source projects** for **Hospital Bed Management**. These systems help hospitals manage bed availability, patient placement, admissions, transfers, discharges, housekeeping/bed turnover, capacity forecasting, patient flow, and hospital-wide operational coordination.
+This repository tracks notable **SaaS/hosted platforms** and **open-source projects** for **High-Performance Computing (HPC) Cloud**. These platforms enable organizations to provision, orchestrate, scale, monitor, and operate HPC clusters across public clouds, private infrastructure, hybrid environments, and specialized bare-metal systems.
 
-**Examples** include TeleTracking, LeanTaaS iQueue, Central Logic, Care Logistics, GE HealthCare Command Center, Qventus, Hospital IQ, Infor, Oracle Health, Palantir, and related patient-flow and capacity-management platforms.
+**Examples** include Rescale, Azure CycleCloud, AWS ParallelCluster, Google Cloud HPC Toolkit, Nimbix, Altair One, Penguin Computing, UberCloud, Sabrewing HPC, and HPCNow!.
 
-**Open-source emphasis**: This section is heavily expanded with open-source hospital-management systems, bed-management applications, patient-flow prediction projects, hospital-capacity analytics, queue-management systems, healthcare interoperability infrastructure, and building blocks that can be combined into a self-hosted bed-management platform.
+**Open-source emphasis**: This section is heavily expanded with open-source HPC cluster managers, schedulers, cloud-bursting frameworks, self-service portals, provisioning systems, infrastructure-as-code tools, and complete private-cloud/HPC management platforms. These projects can be combined to build self-hosted alternatives to commercial HPC-cloud platforms.
 
-Modern hospital bed management increasingly goes beyond simply displaying "available beds". Advanced platforms combine **real-time bed status, admission/discharge prediction, patient placement, environmental services, transfer management, ED boarding, capacity forecasting, command-center dashboards, staffing constraints, and AI/prescriptive analytics**.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites or repositories.
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-- [Hospital Bed Management Stack](#hospital-bed-management-stack)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+* [SaaS/Hosted Platforms](#saashosted-platforms)
+* [Open-Source GitHub Projects](#open-source-github-projects)
+* [How to Contribute](#how-to-contribute)
+* [Disclaimer](#disclaimer)
 
 ## SaaS/Hosted Platforms
 
-- **[TeleTracking](https://www.teletracking.com/)**  
-  Hospital operations and patient-flow platform focused on bed management, capacity management, patient placement, environmental services, transport, transfer management, and operational automation. Its Operations IQ platform provides an operational layer over the EMR for capacity planning, patient flow, and discharge workflows. :contentReference[oaicite:0]{index=0}
+* **[Rescale](https://rescale.com/)**
+  Full-stack HPC SaaS platform for engineering, scientific computing, simulation, AI/ML, and distributed workloads. Rescale provides cloud HPC orchestration, application environments, workflow automation, and access to multiple cloud infrastructures.
 
-- **[LeanTaaS iQueue](https://leantaas.com/)**  
-  AI-driven capacity-management platform with iQueue for Inpatient Flow/Beds, providing predictive and prescriptive analytics for bed capacity, admissions, discharges, patient flow, and staffing. :contentReference[oaicite:1]{index=1}
+* **[Azure CycleCloud](https://azure.microsoft.com/products/cyclecloud/)**
+  Enterprise HPC orchestration and management platform for Microsoft Azure, supporting schedulers such as Slurm, PBS Pro, LSF, Grid Engine, and HTCondor with automated cluster scaling.
 
-- **[Central Logic](https://www.centrallogic.com/)**  
-  Patient-flow and transfer-center platform focused on managing transfers, referrals, patient placement, capacity visibility, and access to care across health systems.
+* **[AWS ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/)**
+  Open-source cluster management tool from AWS for deploying and dynamically scaling HPC environments on AWS using schedulers such as Slurm and AWS Batch. Although the software is open source, it is included here because its primary role is provisioning HPC infrastructure as an AWS cloud service.
 
-- **[Care Logistics](https://carelogistics.com/)**  
-  Hospital patient-flow and capacity-management platform providing operational visibility into beds, patient movement, staffing, transport, environmental services, and throughput.
+* **[Google Cloud HPC Toolkit](https://cloud.google.com/hpc-toolkit)**
+  Google Cloud's open-source toolkit for creating repeatable, turnkey HPC clusters using infrastructure-as-code and established HPC best practices.
 
-- **[GE HealthCare Command Center](https://www.gehealthcare.com/)**  
-  Command-center technology for hospital operations that aggregates clinical and operational data to provide system-wide visibility into patient flow, capacity, staffing, and resource utilization.
+* **[Nimbix](https://www.nimbix.net/)**
+  HPC cloud platform focused on accelerated computing, engineering simulation, AI, scientific workloads, and specialized compute infrastructure.
 
-- **[Qventus](https://www.qventus.com/)**  
-  AI-powered hospital operations and patient-flow platform providing discharge planning, capacity intelligence, flow prioritization, and operational recommendations. Its Capacity Intelligence capabilities identify high-impact actions for improving throughput. :contentReference[oaicite:2]{index=2}
+* **[Altair One](https://altair.com/altair-one)**
+  Cloud-based engineering and HPC environment providing access to simulation, AI, data analytics, and distributed computing resources.
 
-- **[Hospital IQ](https://www.hospiq.com/)**  
-  Hospital operations analytics and command-center platform focused on patient flow, capacity management, operational intelligence, and predictive analytics.
+* **[Penguin Solutions](https://www.penguinsolutions.com/)**
+  HPC and AI infrastructure provider offering cloud, hosted, bare-metal, and managed HPC environments for technical computing workloads.
 
-- **[Infor Cloverleaf](https://www.infor.com/solutions/healthcare)**  
-  Healthcare interoperability and integration platform from Infor that can support patient-flow and hospital-operational data integration across clinical systems.
+* **[UberCloud](https://www.ubercloud.com/)**
+  HPC cloud marketplace and ecosystem connecting technical-computing users with cloud HPC infrastructure, applications, and service providers.
 
-- **[Oracle Health Patient Flow](https://www.oracle.com/health/)**  
-  Healthcare technology ecosystem providing capabilities around patient flow, clinical operations, capacity, and hospital resource management.
+* **[Sabrewing HPC](https://www.sabrewing.com/)**
+  HPC-focused infrastructure and cloud-computing services for technical and scientific workloads.
 
-- **[Oracle Health Command Center](https://www.oracle.com/health/)**  
-  Hospital operational and clinical-data capabilities designed to provide centralized visibility and decision support across healthcare organizations.
+* **[HPCNow!](https://www.hpcnow.com/)**
+  HPC infrastructure and cloud services provider focused on deploying and operating high-performance computing environments.
 
-- **[Palantir Foundry for Healthcare](https://www.palantir.com/)**  
-  Data and operations platform that can be used to integrate EHR, operational, staffing, capacity, and logistics data for hospital command-center and patient-flow applications.
+### Other Strong Commercial / Hosted Options
 
-- **[Microsoft Cloud for Healthcare](https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare)**  
-  Healthcare cloud ecosystem providing data, analytics, interoperability, AI, and workflow infrastructure that can support hospital capacity and patient-flow applications.
+* **[AWS HPC / AWS Parallel Computing Service](https://aws.amazon.com/hpc/)**
+  AWS services for elastic HPC infrastructure, workload orchestration, networking, storage, and managed cluster environments.
 
-- **[CareAware Patient Flow](https://www.cerner.com/)**  
-  Oracle Health/Cerner ecosystem capability supporting patient-flow and operational workflows across hospital environments.
+* **[Google Cloud HPC](https://cloud.google.com/hpc)**
+  Cloud HPC infrastructure built around high-performance compute, storage, networking, GPUs, and cluster orchestration.
 
-- **[PerfectServe](https://www.perfectserve.com/)**  
-  Healthcare communication and clinical workflow platform that can support patient-flow coordination by connecting care teams, physicians, nurses, and operational staff.
+* **[Azure HPC](https://azure.microsoft.com/solutions/high-performance-computing/)**
+  Azure's collection of HPC compute, storage, networking, scheduler, and cluster-management services.
 
-- **[Medworxx](https://www.medworxx.com/)**  
-  Healthcare workflow and patient-flow technology focused on patient placement, bed management, utilization, and hospital capacity.
+* **[Oracle Cloud HPC](https://www.oracle.com/cloud/hpc/)**
+  HPC infrastructure and bare-metal compute designed for engineering, scientific, simulation, and compute-intensive workloads.
 
-- **[TeleTracking Capacity](https://www.teletracking.com/)**  
-  Capacity-management capabilities within TeleTracking designed to provide visibility into current and future bed capacity and improve patient placement and throughput.
+* **[CoreWeave](https://www.coreweave.com/)**
+  GPU-focused cloud infrastructure increasingly used for large-scale AI/HPC workloads.
 
-- **[TeleTracking Operations IQ](https://www.teletracking.com/)**  
-  Operational intelligence layer designed to integrate operational workflows with EMR data and provide enterprise-wide situational awareness for hospital capacity and patient flow. :contentReference[oaicite:3]{index=3}
-
-- **[GE Command Center](https://www.gehealthcare.com/)**  
-  Hospital command-center ecosystem focused on real-time operational visibility, predictive analytics, and coordinated decision-making.
-
-- **[Infor Patient Flow](https://www.infor.com/solutions/healthcare)**  
-  Healthcare workflow capabilities supporting patient-flow, capacity, and operational coordination.
-
-- **[Epic Patient Flow](https://www.epic.com/)**  
-  Epic's hospital information system includes patient-flow and operational capabilities for managing admissions, transfers, discharges, and patient placement.
-
-- **[Strata Decision Technology](https://www.stratadecision.com/)**  
-  Healthcare analytics and decision-support platform that can support capacity planning and operational management.
-
-- **[Access Patient Flow](https://www.accessexcellence.com/)**  
-  Patient-flow and operational technology supporting hospital capacity, discharge, patient placement, and flow coordination.
-
-- **[Sonitor](https://sonitor.com/)**  
-  Real-time location technology that can provide location intelligence for patients, staff, and assets, supporting hospital-flow and operational workflows.
-
-- **[Stryker](https://www.stryker.com/)**  
-  Healthcare technology company with connected hospital solutions and operational technologies that can contribute to patient-flow, asset tracking, and hospital operations.
-
-- **[LeanTaaS iQueue for Inpatient Flow](https://leantaas.com/products/inpatient-flow/)**  
-  Predictive and prescriptive capacity-management solution that continuously monitors patient demand, available beds, staffing needs, and operational bottlenecks. :contentReference[oaicite:4]{index=4}
+* **[Lambda](https://lambdal.com/)**
+  GPU cloud and infrastructure provider supporting AI, machine learning, and high-performance accelerated workloads.
 
 ## Open-Source GitHub Projects
 
-- **[UCL-CORU PatientFlow](https://github.com/UCL-CORU/patientflow)**  
-  Open-source Python package for predicting short-term hospital bed demand using real-time or near-real-time patient data. It predicts future bed requirements for current and incoming patients and is explicitly designed to provide actionable outputs for hospital bed managers. :contentReference[oaicite:5]{index=5}
+* **[AWS ParallelCluster](https://github.com/aws/aws-parallelcluster)**
+  Open-source HPC cluster deployment and management framework for AWS. It automates infrastructure provisioning, cluster configuration, scheduler setup, and elastic scaling.
 
-- **[BedFlow AI](https://github.com/draculess99/BedFlow_AI)**  
-  Open-source AI-driven hospital bed-management project designed to predict bed availability and recommend optimal placement to reduce bottlenecks and waiting times. :contentReference[oaicite:6]{index=6}
+* **[Google Cloud HPC Toolkit](https://github.com/GoogleCloudPlatform/hpc-toolkit)**
+  Open-source infrastructure framework for creating repeatable HPC environments on Google Cloud, including compute, networking, storage, schedulers, and software stacks.
 
-- **[Hospital Bed Management System](https://github.com/Ansarimajid/Hospital-Management-System)**  
-  Open-source hospital-management project specifically including bed availability and allocation functionality. It provides a starting point for building customized bed-management applications. :contentReference[oaicite:7]{index=7}
+* **[Open OnDemand](https://github.com/OSC/ondemand)**
+  Open-source browser-based HPC portal providing web terminals, file management, job submission, monitoring, and interactive applications such as Jupyter and RStudio.
 
-- **[VitalBed](https://github.com/iamabhrajit24/VitalBed)**  
-  Open-source hospital bed-management application featuring bed allocation, real-time dashboards, bed-cleaning workflows, emergency escalation, and patient admission-request tracking. :contentReference[oaicite:8]{index=8}
+* **[Slurm](https://github.com/SchedMD/slurm)**
+  Industry-standard open-source workload manager and job scheduler for Linux clusters. Provides resource allocation, job scheduling, accounting, and cluster management.
 
-- **[MediQ](https://github.com/adot-7/MediQ)**  
-  Open-source hospital-management application with real-time bed-availability tracking across hospital wards and departments, alongside patient queues, admissions, and inventory functionality. :contentReference[oaicite:9]{index=9}
+* **[OpenHPC](https://github.com/openhpc/ohpc)**
+  Community-driven collection of HPC packages, tools, libraries, and cluster-management components for constructing production HPC environments.
 
-- **[Hospital Bed Management and Availability System](https://github.com/4devendrathakur/Hospital-bed-management-and-availability-system)**  
-  Open-source project focused on hospital bed availability and broader hospital-management workflows including admissions, bed booking, patient management, and reporting. :contentReference[oaicite:10]{index=10}
+* **[Warewulf](https://github.com/warewulf/warewulf)**
+  Open-source HPC cluster provisioning and management platform supporting large-scale stateless and container-based compute-node deployment.
 
-- **[OpenMRS](https://github.com/openmrs/openmrs-core)**  
-  Major open-source medical-record platform that can serve as an EHR foundation for building admission, discharge, patient-location, and bed-management workflows.
+* **[xCAT](https://github.com/xcat2/xcat-core)**
+  Open-source infrastructure provisioning and management framework for HPC clusters, bare-metal servers, virtual machines, and data centers. It supports OS provisioning, hardware discovery, remote management, and cloud integration.
 
-- **[OpenEMR](https://github.com/openemr/openemr)**  
-  Open-source electronic medical-record and practice-management platform that can provide patient and encounter infrastructure for custom hospital operations applications.
+* **[OpenStack](https://github.com/openstack/openstack)**
+  Open-source private-cloud infrastructure platform that can provide compute, networking, storage, and tenant management underneath self-hosted HPC clouds.
 
-- **[GNU Health](https://github.com/gnuhealth/gnuhealth)**  
-  Open-source health and hospital information system providing patient, clinical, administrative, and facility-management capabilities.
+* **[Waldur](https://github.com/waldur/waldur-mastermind)**
+  Open-source cloud and HPC management platform providing self-service provisioning, OpenStack and Slurm integration, accounting, billing, and resource management.
 
-- **[Bahmni](https://github.com/Bahmni/bahmni-erp)**  
-  Open-source hospital information system combining clinical workflows, registration, laboratory, pharmacy, and hospital-management functionality. It can serve as a foundation for custom patient-flow and bed-management modules.
+* **[ColdFront](https://github.com/ubccr/coldfront)**
+  Open-source allocations-management platform for HPC centers, handling resource requests, allocations, users, projects, and integration with HPC systems.
 
-- **[HospitalRun](https://github.com/HospitalRun/hospitalrun)**  
-  Open-source hospital information system designed for resource-constrained healthcare environments, with patient and hospital operational workflows.
+* **[Open XDMoD](https://github.com/ubccr/xdmod)**
+  Open-source HPC operational analytics and monitoring platform providing job, CPU, wait-time, wall-time, application, and infrastructure-performance metrics.
 
-- **[ERPNext Healthcare](https://github.com/frappe/erpnext)**  
-  Open-source ERP platform with healthcare functionality that can be extended for admissions, appointments, patient records, resources, and hospital operations.
+* **[StackHPC Slurm Appliance](https://github.com/stackhpc/ansible-slurm-appliance)**
+  Open-source Ansible-based reference environment for deploying Slurm HPC clusters with OpenTofu, OpenHPC packages, shared storage, monitoring, accounting, and Open OnDemand.
 
-- **[GNU Health Hospital Management](https://www.gnuhealth.org/)**  
-  Open-source healthcare information system covering clinical and administrative workflows and capable of serving as a broader foundation for hospital operations.
+* **[OpenTofu](https://github.com/opentofu/opentofu)**
+  Open-source infrastructure-as-code engine useful for reproducible provisioning of HPC infrastructure across clouds and private environments.
 
-- **[Open Hospital](https://github.com/informatici/openhospital)**  
-  Open-source hospital information system supporting patient records, admissions, clinical workflows, pharmacy, laboratory, and hospital administration.
+* **[Terraform](https://github.com/hashicorp/terraform)**
+  Infrastructure-as-code platform widely used for automating cloud HPC infrastructure, networking, storage, identity, and cluster resources.
 
-- **[Hospital Management System](https://github.com/Ansarimajid/Hospital-Management-System)**  
-  Lightweight open-source implementation focused specifically on bed availability, allocation, and hospital-management workflows.
+* **[Ansible](https://github.com/ansible/ansible)**
+  Open-source automation framework commonly used to configure HPC nodes, software environments, schedulers, storage, and cluster services.
 
-- **[EASPATAAL](https://github.com/gaureshpai/easpataal)**  
-  Open-source hospital queue-management project designed to reduce waiting times and coordinate patient movement through hospital departments. The repository is currently archived, so it is better treated as a reference implementation than a production dependency. :contentReference[oaicite:11]{index=11}
+* **[HTCondor](https://github.com/htcondor/htcondor)**
+  Open-source high-throughput computing workload-management system suitable for distributed compute environments and opportunistic cloud resources.
 
-- **[OpenBoxes](https://github.com/openboxes/openboxes)**  
-  Open-source inventory and supply-chain management system for healthcare environments. While not a bed-management platform, it can provide an operational foundation for hospital resource and logistics workflows.
+* **[OpenPBS](https://github.com/openpbs/openpbs)**
+  Open-source workload manager and scheduler descended from the PBS family and designed for HPC, cloud, and large-scale compute clusters.
 
-- **[OpenELIS Global](https://github.com/openelisglobal/openelisglobal-core)**  
-  Open-source laboratory information system that can contribute laboratory-status data to a larger patient-flow architecture.
+* **[Flux](https://github.com/flux-framework/flux-core)**
+  Modern open-source resource-management and scheduling framework designed for large-scale HPC systems and capable of hierarchical workload management.
 
-- **[OpenHIM](https://github.com/jembi/openhim-core)**  
-  Open-source interoperability layer for healthcare systems, useful for connecting EHRs, hospital-management systems, patient-flow engines, and operational dashboards.
+* **[Kubernetes](https://github.com/kubernetes/kubernetes)**
+  Open-source container orchestration platform increasingly used for GPU/HPC clusters, cloud-native scientific computing, batch workloads, and AI infrastructure.
 
-- **[HAPI FHIR](https://github.com/hapifhir/hapi-fhir)**  
-  Open-source FHIR implementation useful for building interoperable healthcare data infrastructure connecting patient, encounter, location, admission, transfer, and operational systems.
+* **[Kueue](https://github.com/kubernetes-sigs/kueue)**
+  Kubernetes-native job queueing system designed to manage quotas, queues, priorities, and resource allocation for batch and AI workloads.
 
-- **[Medplum](https://github.com/medplum/medplum)**  
-  Open-source healthcare developer platform based around FHIR, useful for building custom patient-flow, admission, location, and operational applications.
+* **[Volcano](https://github.com/volcano-sh/volcano)**
+  Kubernetes-native batch scheduler designed for HPC, AI, machine learning, and other high-performance workloads.
 
-- **[Synthea](https://github.com/synthetichealth/synthea)**  
-  Open-source synthetic patient generator useful for developing and testing hospital bed-management and patient-flow algorithms without exposing real patient information.
+* **[SkyPilot](https://github.com/skypilot-org/skypilot)**
+  Open-source framework for running AI and compute workloads across multiple clouds and Kubernetes clusters, with automated provisioning and cost-aware resource selection.
 
-- **[MIMIC-IV](https://github.com/MIT-LCP/mimic-iv)**  
-  Large critical-care dataset ecosystem useful for research into patient flow, length of stay, admissions, discharge prediction, and hospital operations, subject to its data-access requirements.
-
-- **[OHDSI](https://github.com/OHDSI)**  
-  Open-source ecosystem for observational healthcare data and analytics, useful for developing population-level models that can inform hospital capacity and patient-flow systems.
-
-- **[Apache Superset](https://github.com/apache/superset)**  
-  Open-source analytics and dashboard platform suitable for building hospital capacity dashboards over bed, admission, discharge, and operational datasets.
-
-- **[Grafana](https://github.com/grafana/grafana)**  
-  Open-source observability and dashboarding platform that can be used to visualize real-time bed occupancy, admissions, discharges, transfers, environmental-services status, and capacity metrics.
-
-- **[Apache Airflow](https://github.com/apache/airflow)**  
-  Open-source workflow orchestration platform useful for scheduling hospital operational-data pipelines and recurring capacity analytics.
-
-- **[Apache Kafka](https://github.com/apache/kafka)**  
-  Open-source event-streaming platform suitable for real-time propagation of bed-status changes, patient movement events, admissions, discharges, transfers, and environmental-services events.
+* **[Cloud-Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor)**
+  Open-source cloud-native virtual machine monitor useful for building specialized compute infrastructure and lightweight virtualized HPC environments.
 
 ### Additional Strong Open-Source Options
 
-- **UCL-CORU PatientFlow** — short-term predictive hospital bed-demand forecasting.
-- **BedFlow AI** — AI-assisted bed availability and placement prototype.
-- **VitalBed** — real-time bed allocation and operational workflow prototype.
-- **MediQ** — bed availability and hospital-management application.
-- **OpenMRS** — extensible open-source EHR foundation.
-- **OpenEMR** — open-source medical-record platform.
-- **Bahmni** — open-source hospital information system.
-- **GNU Health** — open-source hospital and health information system.
-- **Open Hospital** — open-source hospital-management system.
-- **HospitalRun** — open-source hospital information system.
-- **ERPNext Healthcare** — open-source ERP/healthcare foundation.
-- **HAPI FHIR** — FHIR interoperability infrastructure.
-- **OpenHIM** — healthcare interoperability middleware.
-- **Medplum** — developer-oriented FHIR platform.
-- **Synthea** — synthetic patient data generation for testing.
-- **MIMIC-IV** — research dataset for healthcare analytics and prediction.
-- **OHDSI** — open healthcare analytics ecosystem.
-- **Grafana** — real-time operational dashboards.
-- **Apache Superset** — business intelligence and capacity reporting.
-- **Apache Kafka** — real-time hospital-event streaming.
-- **Apache Airflow** — healthcare-data pipeline orchestration.
+* **[OpenPBS](https://github.com/openpbs/openpbs)** for PBS-style HPC scheduling and workload management.
+* **[HTCondor](https://github.com/htcondor/htcondor)** for high-throughput and distributed computing.
+* **[Flux Framework](https://github.com/flux-framework/flux-core)** for next-generation HPC resource management.
+* **[Kueue](https://github.com/kubernetes-sigs/kueue)** for Kubernetes batch scheduling and quota management.
+* **[Volcano](https://github.com/volcano-sh/volcano)** for Kubernetes-native HPC and AI scheduling.
+* **[OpenStack Magnum](https://github.com/openstack/magnum)** for container orchestration integrated with private cloud infrastructure.
+* **[Prometheus](https://github.com/prometheus/prometheus)** for cluster and workload monitoring.
+* **[Grafana](https://github.com/grafana/grafana)** for HPC infrastructure and job-performance dashboards.
+* **[Lmod](https://github.com/TACC/Lmod)** for managing HPC software environments and module stacks.
+* **[Spack](https://github.com/spack/spack)** for reproducible installation and management of HPC software stacks.
+* **[EasyBuild](https://github.com/easybuilders/easybuild-framework)** for automated HPC software builds and deployment.
+* **[Apptainer](https://github.com/apptainer/apptainer)** for secure, portable containers on HPC clusters.
+* **[OpenMPI](https://github.com/open-mpi/ompi)** for distributed-memory parallel computing using MPI.
+* **[MPICH](https://github.com/pmodels/mpich)** for high-performance MPI implementations.
+* **[BeeGFS](https://github.com/ThinkParQ/beegfs)** for parallel file-system infrastructure.
+* **[Lustre](https://github.com/lustre/lustre-release)** for large-scale parallel HPC storage.
+* **[Ceph](https://github.com/ceph/ceph)** for scalable distributed storage that can underpin cloud/HPC environments.
+* **[PyTorch](https://github.com/pytorch/pytorch)** for distributed GPU computing and large-scale machine-learning workloads.
+* **[Ray](https://github.com/ray-project/ray)** for distributed computing and elastic execution of Python/AI workloads.
+* **[Dask](https://github.com/dask/dask)** for parallel and distributed Python computation.
 
-**Important distinction**: There are relatively few mature open-source projects that directly replicate the full functionality of enterprise platforms such as **TeleTracking, LeanTaaS iQueue, Care Logistics, or GE HealthCare Command Center**. The strongest open-source approach is generally compositional: combine an **EHR/FHIR layer + real-time event infrastructure + bed-management application + predictive models + dashboarding + workflow automation**.
-
-## Hospital Bed Management Stack
-
-A modern open-source **Hospital Bed Management Platform** can be assembled from several independent layers:
-
-1. **EHR / Clinical Data** — OpenMRS, OpenEMR, Bahmni, GNU Health
-2. **Healthcare Interoperability** — HAPI FHIR, OpenHIM, Medplum
-3. **Patient Identity** — MPI/FHIR Patient resources
-4. **Bed & Location Model** — FHIR Location, Encounter and custom bed-management services
-5. **Real-Time Events** — Apache Kafka
-6. **Operational Database** — PostgreSQL
-7. **Bed Availability** — custom bed-state service / VitalBed-style application
-8. **Patient Placement** — rules engine + constraint-based optimization
-9. **Admissions Forecasting** — UCL-CORU PatientFlow
-10. **Discharge Prediction** — custom ML models / patient-flow models
-11. **Capacity Forecasting** — Python, scikit-learn, XGBoost, PyTorch
-12. **Queue Management** — custom queueing models
-13. **Environmental Services** — bed-cleaning / turnover workflow
-14. **Transport Coordination** — event-driven workflow services
-15. **Transfer Management** — FHIR + workflow engine
-16. **Command Center** — Grafana / Apache Superset
-17. **Operational Analytics** — Apache Superset
-18. **Workflow Automation** — Apache Airflow / Temporal
-19. **Machine Learning** — PyTorch / scikit-learn / XGBoost
-20. **Synthetic Testing** — Synthea
-21. **Observability** — Prometheus + Grafana
-22. **Deployment** — Docker + Kubernetes
-
-A practical self-hosted architecture could look like:
-
-**OpenMRS / OpenEMR / FHIR → HAPI FHIR / OpenHIM → Kafka → Bed Management Service → PostgreSQL → Patient-Flow Prediction → Optimization Engine → Grafana / Superset Command Center**
-
-### Core Bed Management Functions
-
-- **Real-Time Bed Census** — current occupied, available, blocked, dirty, cleaning, reserved, and unavailable beds.
-- **Bed Allocation** — assign patients to appropriate beds based on clinical and operational constraints.
-- **Patient Placement** — match patients with suitable units and beds.
-- **Admission Management** — track pending admissions and expected bed requirements.
-- **Transfer Management** — coordinate inter-unit and inter-facility transfers.
-- **Discharge Management** — predict and track expected discharges.
-- **Bed Turnover** — track when beds become available after discharge and environmental-services completion.
-- **Housekeeping Coordination** — coordinate cleaning and bed readiness.
-- **ED Boarding** — monitor admitted patients waiting for inpatient beds.
-- **Capacity Forecasting** — estimate future bed requirements.
-- **Surge Management** — identify upcoming capacity constraints.
-- **Staffing Constraints** — incorporate staffing availability into capacity calculations.
-- **Isolation Requirements** — account for infection-control and room constraints.
-- **Specialty Matching** — route patients to clinically appropriate units.
-- **Escalation Management** — alert operational teams when bottlenecks require intervention.
-- **Command Center** — centralized operational view across facilities.
-- **Predictive Analytics** — forecast admissions, discharges, transfers, and bed demand.
-- **Prescriptive Analytics** — recommend actions to improve throughput.
-- **Hospital-Wide Capacity** — coordinate capacity across multiple hospitals and facilities.
-
-### Key Hospital Capacity Metrics
-
-- **Bed Occupancy Rate**
-- **Available Beds**
-- **Blocked Beds**
-- **Dirty Beds**
-- **Bed Turnaround Time**
-- **ED Boarding Time**
-- **Admission-to-Bed Time**
-- **Discharge-to-Bed-Available Time**
-- **Average Length of Stay**
-- **Expected Discharges**
-- **Actual Discharges**
-- **Admissions per Hour**
-- **Transfers per Hour**
-- **Transfer Declines**
-- **Patients Waiting for Beds**
-- **Patients Awaiting Discharge**
-- **Diversion Status**
-- **Unit-Level Occupancy**
-- **Hospital-Level Occupancy**
-- **ICU Capacity**
-- **Isolation Capacity**
-- **Staffing-Constrained Capacity**
-- **Forecasted Bed Demand**
-- **Capacity Buffer**
-- **Surge Capacity**
+**Frameworks for building a self-hosted HPC Cloud**: A particularly strong open-source stack can combine **OpenStack + Slurm + Warewulf + Open OnDemand + ColdFront + Open XDMoD + Spack/Lmod + Apptainer + Prometheus/Grafana**, with **OpenTofu/Ansible** for infrastructure automation. This provides many of the architectural building blocks found in commercial HPC-cloud offerings. The Open OnDemand/ColdFront/Open XDMoD combination is explicitly used as an integrated open-source HPC-center toolset.
 
 ## How to Contribute
 
 1. Fork the repo.
 2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Prioritize actively maintained projects with meaningful bed-management, patient-flow, capacity-management, healthcare interoperability, or hospital-operations functionality.
-5. Verify the project's current license before describing it as open source.
-6. Distinguish between a **complete bed-management application** and a **building block** that can be used to construct one.
-7. Submit a PR with a short explanation.
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS, hosted, or open-source.
+4. Prefer active projects with public source repositories for the Open-Source section.
+5. Submit a PR with a short explanation.
 
 Star the repo if you find it useful!
 
 ## Disclaimer
 
-- This is a **community-curated list** — not exhaustive and not an endorsement.
-- Enterprise hospital bed-management platforms and open-source projects have substantially different feature sets, deployment models, scalability, support models, and regulatory capabilities.
-- There are comparatively few mature open-source projects that provide the complete functionality of commercial hospital command-center and bed-management platforms.
-- Many open-source projects listed here are components, research tools, prototypes, EHR systems, interoperability frameworks, or analytics libraries rather than direct replacements for enterprise bed-management products.
-- Healthcare data is highly sensitive. Production systems must implement appropriate privacy, security, authentication, authorization, audit logging, encryption, and data-governance controls.
-- Healthcare interoperability standards such as **FHIR, HL7 v2, DICOM, and IHE** should be considered when integrating clinical and operational systems.
-- Predictive models should augment rather than replace qualified hospital operational judgment.
-- Bed-placement algorithms may affect patient care and therefore require appropriate clinical governance, validation, monitoring, and human oversight.
-- Open-source software licensing varies between projects; always verify the current license and any commercial or enterprise-edition restrictions before deployment.
-- Research datasets such as MIMIC-IV have their own access and usage requirements and should not be treated as freely redistributable production data.
-- Hospital-specific workflows, staffing models, clinical requirements, infection-control policies, and regulatory requirements should be validated before deploying a custom bed-management system.
+* This is a **community-curated list** — not exhaustive and not an endorsement.
+* Some projects listed under the SaaS/Hosted section also publish open-source components or tooling; classification is based on their primary commercial delivery model.
+* Cloud HPC costs can vary substantially based on compute instances, GPUs, interconnects, storage, data transfer, scheduler configuration, and workload utilization.
+* Self-hosted HPC environments require appropriate expertise in Linux, networking, security, schedulers, parallel filesystems, and cluster operations.
+* Always verify the current licensing terms of individual open-source projects before using them commercially.
 
 ---
 
-**Made for hospital operations teams, patient-flow managers, bed managers, command centers, healthcare IT teams, clinical operations researchers, data scientists, ML engineers, and open-source healthcare developers.**  
-Let's make hospital capacity management more open, data-driven, interoperable, predictive, and efficient.
+**Made for researchers, engineers, AI/ML teams, universities, national laboratories, simulation teams, and HPC infrastructure engineers.**
+Let's make high-performance computing more **elastic, reproducible, accessible, and open**.
